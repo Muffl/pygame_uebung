@@ -17,7 +17,7 @@ def zeichen():
 
 
 x=300
-y=440
+y=440.0
 geschw=5
 breite=40
 hoehe=80
@@ -50,10 +50,10 @@ while go:
     if gedrueckt[pygame.K_LEFT]and not spielerRechteck.colliderect(linkeWand):
         x -= geschw
 
-    if sprungVar >= -15:
-        n = 1
+    if sprungVar >= -15.0:
+        n = 1.0
         if sprungVar < 0:
-            n=-1
+            n=-1.0
         y -= (sprungVar**2)*0.17*n
         sprungVar -=1
 
